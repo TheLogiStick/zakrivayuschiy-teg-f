@@ -19,7 +19,7 @@
 	<body class="page">
 		<header class="header">
 			<div class="header__content">
-				<a href="#" class="logo">&lt;/HTML&gt;</a>
+				<a class="logo">&lt;/html&gt;</a>
 				<h1 class="main-title">закрывающий тег</h1>
 				<nav class="theme-menu header__theme-menu">
 					<!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -124,7 +124,7 @@
 				<li class="content-list__item">
 					<article class="card">
 						<h2 class="card__title">1 спринт: Я — чистый лист</h2>
-						<div class="card__image">
+						<div class="card__image filter-grayscale">
 							<img
 								src="./images/card-image.png"
 								alt="фургон с фильтром оттенков серого"
@@ -192,7 +192,7 @@
 				<li class="content-list__item">
 					<article class="card">
 						<h2 class="card__title">1 спринт: А если не получится?</h2>
-						<div class="card__image">
+						<div class="card__image filter-saturate">
 							<img
 								src="./images/card-image.png"
 								alt="фургон с фильтром насыщенности"
@@ -260,7 +260,7 @@
 				<li class="content-list__item">
 					<article class="card">
 						<h2 class="card__title">2 спринт: Погоня за идеалом</h2>
-						<div class="card__image">
+						<div class="card__image filter-hue-rotate">
 							<img
 								src="./images/card-image.png"
 								alt="фургон с фильтром цветовым сдвигом"
@@ -327,7 +327,7 @@
 				<li class="content-list__item">
 					<article class="card">
 						<h2 class="card__title">2 спринт: О тех, кто рядом</h2>
-						<div class="card__image">
+						<div class="card__image filter-invert">
 							<img
 								src="./images/card-image.png"
 								alt="фургон с фильтром инверсии"
@@ -397,7 +397,7 @@
 				<li class="content-list__item">
 					<article class="card">
 						<h2 class="card__title">3 спринт: Обходные стратегии</h2>
-						<div class="card__image">
+						<div class="card__image filter-sepia">
 							<img
 								src="./images/card-image.png"
 								alt="фургон с фильтром сепии"
@@ -462,7 +462,7 @@
 				<li class="content-list__item">
 					<article class="card">
 						<h2 class="card__title">3 спринт: Когда опускаются руки</h2>
-						<div class="card__image">
+						<div class="card__image filter-blur">
 							<img
 								src="./images/card-image.png"
 								alt="фургон с фильтром размытия"
@@ -531,7 +531,7 @@
 				<li class="content-list__item">
 					<article class="card">
 						<h2 class="card__title">«Сейчас я здесь»</h2>
-						<div class="card__image">
+						<div class="card__image filter-contrast">
 							<img
 								src="./images/card-image.png"
 								alt="фургон с фильтрами цветового сдвига и контрастности"
@@ -601,20 +601,20 @@
 					</article>
 				</li>
 			</ul>
+			<section class="save">
+				<button
+					class="save__button button"
+					type="button"
+					onclick="window['dialog-floppy'].showModal()"
+					aria-controls="dialog-floppy"
+				>
+					<svg class="save__button-svg">
+						<use href="./svg/floppy.svg#floppy"></use>
+					</svg>
+					<span>Сохранить на память</span>
+				</button>
+			</section>
 		</main>
-		<footer class="footer">
-			<button
-				class="footer__button button"
-				type="button"
-				onclick="window['dialog-floppy'].showModal()"
-				aria-controls="dialog-floppy"
-			>
-				<svg class="footer__button-svg">
-					<use href="./svg/floppy.svg#floppy"></use>
-				</svg>
-				<span>Сохранить на память</span>
-			</button>
-		</footer>
 		<dialog class="dialog" id="dialog-floppy">
 			<div class="dialog__text-container">
 				<svg class="dialog__svg" viewbox="0 0 21 21">
@@ -624,7 +624,7 @@
 			</div>
 			<form action="floppy" class="dialog__form" method="dialog">
 				<button class="dialog__button button" type="submit">
-					<span>ОK</span>
+					<span>ok</span>
 				</button>
 			</form>
 		</dialog>
